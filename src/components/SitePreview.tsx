@@ -125,8 +125,8 @@ function HomeSplit({lang, t}:{lang:"es"|"en"; t:(es:string,en:string)=>string}){
       {/* Secciones comunes bajo el split */}
       <div className="mt-10 grid gap-6">
         <Card title={t("Logos de clientes","Client logos")}>
-          <img className="w-full object-contain" alt="logos_clientes.png"
-               src={`https://via.placeholder.com/1200x220/0B1020/ffffff?text=logos_clientes.png`} />
+          <img className="w-full object-contain" alt="logos_clientes.jpg"
+               src=public/images/logos_clientes.jpg />
         </Card>
         <Card title={t("Beneficios","Benefits")}>
           <div className="grid md:grid-cols-2 gap-4">
@@ -140,7 +140,7 @@ function HomeSplit({lang, t}:{lang:"es"|"en"; t:(es:string,en:string)=>string}){
         </Card>
         <Card title={t("Casos destacados","Featured work")}>
           <img className="w-full rounded-xl border border-white/10" alt="caso_placeholder.jpg"
-               src={`https://via.placeholder.com/1200x800/0B1020/ffffff?text=caso_placeholder.jpg`} />
+               src=public/images/caso_placeholder.jpg />
         </Card>
         <Card title="Blog">
           <div className="grid md:grid-cols-3 gap-4">
@@ -364,3 +364,4 @@ function ChatbotBubble(){
     </button>
   );
 }
+
