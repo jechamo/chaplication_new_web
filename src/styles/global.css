@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Opcional: pequeños ajustes */
+html, body { background:#0B1020; color:#e5e7eb; }

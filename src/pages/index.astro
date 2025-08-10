@@ -1,0 +1,12 @@
+---
+import Base from "../layouts/Base.astro";
+import SitePreview from "../components/SitePreview";
+const page = {
+  title: "Inicio",
+  description: "Automatizaciones Make e IA + IA Audiovisual",
+  canonical: "https://tu-dominio.com/",
+};
+---
+<Base {page}>
+  <SitePreview client:load />
+</Base>
