@@ -120,7 +120,7 @@ function HomeSplit({lang, t}:{lang:"es"|"en"; t:(es:string,en:string)=>string}){
             t("Reporting y analítica","Reporting & analytics"),
             t("Bots y asistentes a medida","Custom bots & assistants"),
           ]}
-          heroName="hero_automatizaciones.jpg"
+          heroName="hero_automatizaciones.jpeg"
         />
         <SplitColumn
           accent="#6B4EFF"
@@ -133,7 +133,7 @@ function HomeSplit({lang, t}:{lang:"es"|"en"; t:(es:string,en:string)=>string}){
             t("Locución y avatars","Voice & avatars"),
             t("Guiones con IA","AI‑assisted scripts"),
           ]}
-          heroName="hero_audiovisual.jpg"
+          heroName="hero_audiovisual.jpeg"
         />
       </div>
 
@@ -154,12 +154,12 @@ function HomeSplit({lang, t}:{lang:"es"|"en"; t:(es:string,en:string)=>string}){
           </div>
         </Card>
         <Card title={t("Casos destacados","Featured work")}>
-          <img className="w-full rounded-xl border border-white/10" alt="caso_placeholder.jpg"
-               src={img("caso_placeholder.jpg")} />
+          <img className="w-full rounded-xl border border-white/10" alt="caso_placeholder.jpeg"
+               src={img("caso_placeholder.jpeg")} />
         </Card>
         <Card title="Blog">
           <div className="grid md:grid-cols-3 gap-4">
-            {["blog_1.jpg","blog_2.jpg","blog_3.jpg"].map(n=> (
+            {["blog_1.jpeg","blog_2.jpeg","blog_3.jpeg"].map(n=> (
               <article key={n} className="rounded-2xl overflow-hidden border border-white/10">
                 <img src={img(n)} alt={n} />
                 <div className="p-4 bg-white/5">
@@ -222,8 +222,8 @@ function SplitColumn({accent, badge, title, subtitle, bullets, heroName}:{
 // SERVICIOS
 function Servicios({t}:{t:(es:string,en:string)=>string}){
   const blocks = [
-    { img:"servicio_automatizaciones.jpg", title:t("Automatizaciones","Automations"), desc:t("Integraciones Make, CRM, marketing, e‑commerce y soporte.","Make integrations, CRM, marketing, e‑commerce and support.")},
-    { img:"servicio_audiovisual.jpg", title:t("IA Audiovisual","Audiovisual AI"), desc:t("Spots, reels, locución y piezas para RRSS con IA.","Spots, reels, voiceover and social content with AI.")},
+    { img:"servicio_automatizaciones.jpeg", title:t("Automatizaciones","Automations"), desc:t("Integraciones Make, CRM, marketing, e‑commerce y soporte.","Make integrations, CRM, marketing, e‑commerce and support.")},
+    { img:"servicio_audiovisual.jpeg", title:t("IA Audiovisual","Audiovisual AI"), desc:t("Spots, reels, locución y piezas para RRSS con IA.","Spots, reels, voiceover and social content with AI.")},
   ];
   return (
     <section>
@@ -252,7 +252,7 @@ function Casos({t}:{t:(es:string,en:string)=>string}){
       <div className="grid md:grid-cols-3 gap-6">
         {[1,2,3].map(i=> (
           <div key={i} className="rounded-2xl overflow-hidden border border-white/10">
-            <img src={img(`caso_${i}.jpg`)} alt={`caso_${i}.jpg`} />
+            <img src={img(`caso_${i}.jpeg`)} alt={`caso_${i}.jpeg`} />
             <div className="p-5 bg-white/5">
               <h3 className="text-lg font-semibold">{t("Caso","Case")} #{i}</h3>
               <p className="text-sm opacity-80">{t("+38% leads en 30 días","+38% leads in 30 days")}</p>
@@ -271,9 +271,9 @@ function Blog({t}:{t:(es:string,en:string)=>string}){
       <h1 className="text-3xl font-extrabold mb-6">Blog</h1>
       <div className="grid md:grid-cols-3 gap-6">
         {[
-          {img:"blog_default.jpg", title:t("Cómo la IA transforma el vídeo","How AI transforms video")},
-          {img:"blog_default.jpg", title:t("5 automatizaciones clave","5 key automations")},
-          {img:"blog_default.jpg", title:t("Caso práctico de Make","Make practical case")},
+          {img:"blog_default.jpeg", title:t("Cómo la IA transforma el vídeo","How AI transforms video")},
+          {img:"blog_default.jpeg", title:t("5 automatizaciones clave","5 key automations")},
+          {img:"blog_default.jpeg", title:t("Caso práctico de Make","Make practical case")},
         ].map((p,idx)=> (
           <article key={idx} className="rounded-2xl overflow-hidden border border-white/10">
             <img src={img(p.img)} alt={p.img} />
@@ -294,7 +294,7 @@ function Sobre({t}:{t:(es:string,en:string)=>string}){
     <section>
       <h1 className="text-3xl font-extrabold mb-6">{t("Sobre mí","About me")}</h1>
       <div className="grid md:grid-cols-2 gap-6 items-start">
-        <img className="rounded-2xl border border-white/10" src={img("sobre_equipo.jpg")} alt="sobre_equipo.jpg" />
+        <img className="rounded-2xl border border-white/10" src={img("sobre_equipo.jpeg")} alt="sobre_equipo.jpeg" />
         <div className="space-y-3">
           <p className="opacity-90">{t("Soy [Tu Nombre], y ayudo a empresas a aprovechar la automatización y la IA audiovisual.","I'm [Your Name], and I help businesses leverage automation and audiovisual AI.")}</p>
           <ul className="list-disc list-inside opacity-80 text-sm">
@@ -313,7 +313,7 @@ function Contacto({t}:{t:(es:string,en:string)=>string}){
   return (
     <section>
       <h1 className="text-3xl font-extrabold mb-4">{t("Contacto","Contact")}</h1>
-      <img className="rounded-2xl border border-white/10 mb-6" src={img("contacto_hero.jpg")} alt="contacto_hero.jpg" />
+      <img className="rounded-2xl border border-white/10 mb-6" src={img("contacto_hero.jpeg")} alt="contacto_hero.jpeg" />
       <p className="opacity-80 mb-4">{t("Completa el formulario para tu demo personalizada.","Fill the form to get your personalized demo.")}</p>
       <a href="https://tally.so/r/mBqDee" className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-white text-slate-900 font-semibold">
         {t("Abrir formulario Tally","Open Tally form")}
@@ -330,7 +330,7 @@ function Legal({t}:{t:(es:string,en:string)=>string}){
 
       <Card title={t("Privacidad","Privacy Policy")}>
         <p className="text-sm opacity-90">{t("Resumen RGPD, datos recogidos, base legal, derechos ARCO, contacto.","GDPR summary, data collected, legal basis, user rights, contact.")}</p>
-        <img className="mt-3 rounded-xl border border-white/10" src={img("legal_hero.jpg")} alt="legal_hero.jpg" />
+        <img className="mt-3 rounded-xl border border-white/10" src={img("legal_hero.jpeg")} alt="legal_hero.jpeg" />
       </Card>
 
       <Card title={t("Términos y Condiciones","Terms & Conditions")}>
@@ -379,3 +379,4 @@ function ChatbotBubble(){
     </button>
   );
 }
+
