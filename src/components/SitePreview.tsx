@@ -10,9 +10,10 @@ import { useState } from "react";
 // - Vite usa import.meta.env.BASE_URL
 // - CRA usa process.env.PUBLIC_URL
 // - Next sirve `public` desde la raíz
-const PUBLIC_BASE = (
-  typeof import !== "undefined" && typeof import.meta !== "undefined" && (import.meta as any)?.env?.BASE_URL
-) || (typeof process !== "undefined" && (process as any)?.env?.PUBLIC_URL) || "";
+const PUBLIC_BASE =
+  (typeof import.meta !== "undefined" && (import.meta as any)?.env?.BASE_URL) ||
+  (typeof process !== "undefined" && (process as any)?.env?.PUBLIC_URL) ||
+  "";
 
 const img = (name: string) => {
   // normalizamos las barras para evitar dobles //
